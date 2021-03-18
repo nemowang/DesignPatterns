@@ -10,7 +10,10 @@ package com.nemowang.singleton;
  * 双重检查 双判断
  */
 public class Mgr06 {
-    private static Mgr06 INSTANCE;
+    /**
+     * volatile解决指令重排问题
+     */
+    private static volatile Mgr06 INSTANCE;
 
     private Mgr06() {}
 
