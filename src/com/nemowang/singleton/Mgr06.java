@@ -35,7 +35,6 @@ public class Mgr06 {
     }
 
     public static void main(String[] args) {
-        // 验证懒汉式的线程不安全性
         for (int i = 0; i < 100 ; i++) {
             new Thread(()->
                     System.out.println(Mgr06.getInstance().hashCode())
